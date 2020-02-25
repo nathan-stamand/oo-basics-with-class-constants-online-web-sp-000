@@ -5,8 +5,7 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    BRANDS.each do |listed_brand|
-      if listed_brand.none?(brand)
+      if BRANDS.none?(brand)
         BRANDS << brand 
       end
     end
